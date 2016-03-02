@@ -3,9 +3,15 @@
 
 //Plan:
       //1. Capture the click event on a link to an image
-            //1.1 show the overlay
-            //1.2 update overlay with the image linked in the linked
-            //1.3 Get child's alt attribute and set caption
+$("#imageGallery a").click(function(event){
+      event.preventDefault();
+      var href = $(this).attr("href");
+      console.log(href);
+      //1.1 show the overlay
+      //1.2 update overlay with the image linked in the linked
+      //1.3 Get child's alt attribute and set caption
+});
+
       //2. Add overlay
          //2.1 Add image
          //2.2 Add caption
