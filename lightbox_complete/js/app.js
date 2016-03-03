@@ -1,19 +1,21 @@
 //Problem: User when clicking on image goes to a dead end
 //solution: create an overlay with the large image - Lightbox
-
+//Add overlay
+var $overlay = $('<div id="overlay"></div>');
+$("body").append($overlay);
+//Add image
+//Add caption
 //Plan:
-      //1. Capture the click event on a link to an image
+      //Capture the click event on a link to an image
 $("#imageGallery a").click(function(event){
       event.preventDefault();
       var href = $(this).attr("href");
-      console.log(href);
-      //1.1 show the overlay
-      //1.2 update overlay with the image linked in the linked
-      //1.3 Get child's alt attribute and set caption
+      $overlay.show();
+      //show the overlay
+      //update overlay with the image linked in the linked
+      //Get child's alt attribute and set caption
 });
 
-      //2. Add overlay
-         //2.1 Add image
-         //2.2 Add caption
+
       //3. When the overlay is clicked
          //3.1 Hide the overlay
